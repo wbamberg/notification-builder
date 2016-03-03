@@ -1,0 +1,28 @@
+{
+
+  "description": "Build notifications",
+  "manifest_version": 2,
+  "name": "Notification-builder",
+  "version": "1.0",
+  "icons": {
+    "48": "icons/beasts-48.png"
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "notification-builder@mozilla.org",
+      "strict_min_version": "47.0a1"
+    }
+  },
+
+  "permissions": [
+    "notifications"
+  ],  
+
+  "browser_action": {
+    "default_icon": "icons/beasts-32.png",
+    "default_title": "Test notifications",
+    "default_popup": "popup/notify.html"
+  }
+
+}

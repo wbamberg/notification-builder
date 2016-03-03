@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="notify.css"/>
+  </head>
+
+<body>
+
+<div class="item-group">
+
+<div class="item">Type
+  <select name="types" id="select-type">
+    <option value="basic" selected>basic</option> 
+    <option value="image" >image</option>
+    <option value="list">list</option>
+    <option value="progress">progress</option>
+  </select>
+</div>
+
+<div class="item">Title
+  <input type="checkbox" id="title">
+</div>
+  
+<div class="item">Message
+  <input type="checkbox" id="message">
+</div>
+
+<div class="item">Context message
+  <input type="checkbox" id="context-message">
+</div>
+
+<div class="item">Priority
+    <select name="types" id="priority">
+      <option value="0" selected>0</option> 
+      <option value="1" >1</option>
+      <option value="2">2</option>
+    </select>
+</div>
+
+<div class="item">Event time
+  <input type="checkbox" id="event-time">
+</div>
+  
+<div class="item">Buttons
+    <select name="types" id="button-count">
+      <option value="0" selected>0</option> 
+      <option value="1" >1</option>
+      <option value="2">2</option>
+    </select>
+</div>
+  
+<div class="item">Is clickable?
+  <input type="checkbox" id="is-clickable">
+</div>
+
+<div class="item">Include image?
+  <input type="checkbox" id="include-image">
+</div>
+
+<div class="item">Item count
+  <input type="text" id="item-count">
+</div>
+
+<div class="item">Progress
+  <input type="text" id="progress">
+</div>
+
+</div>
+
+  <input class="item-group" id="create-notification" type="button" value="Create notification"/><br/>
+
+Error:
+<div class="item-group" id="output"></div>
+
+  <script src="notify.js"></script>
+</body>
+
+</html>
